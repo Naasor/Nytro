@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #intro .carousel-container {
@@ -422,6 +422,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   font-size: 60px;
   font-weight: 700;
+  
 }
 
 @media (max-width: 768px) {
@@ -487,8 +488,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 } 
 
-.abt {
-   padding-top: 2em;
+.abt p{
+   padding-top: 45px;
 }
 
 .home-intro {
@@ -498,14 +499,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-intro p {
-   font-size: 20px;
+   font-size: 12px;
+   text-align: justify;
+   width: 30%;
 } 
-@media (max-width:650px){
-.home-intro p {
-  font-size: 10px;
-  padding-left: 20px;
-}
-}
 
 .home-intro p span {
    color: #ffb246;
@@ -522,7 +519,15 @@ h1, h2, h3, h4, h5, h6 {
 #flavours {
    padding-top: 4em;
    background-color: #fff;
-   /* height: 60em; */
+   /* height: 60em;  */
+}
+
+.flavor h5 {
+  font-size: 14px;
+}
+
+.flavor p {
+  font-size: 12px;
 }
 
 #flavours h2{
@@ -534,6 +539,12 @@ h1, h2, h3, h4, h5, h6 {
 .flav {
    padding-top: 4em;
 }
+
+.flav img {
+  width: 140px;
+   height:140px;
+}
+
 
 .flav:hover {
    cursor: pointer;
@@ -630,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .letter {
-   padding-left: 5em;
+   /* padding-left: 5em; */
    background-color: #fff;
    margin: 0px;
 }
@@ -655,12 +666,6 @@ h1, h2, h3, h4, h5, h6 {
    font-style: normal;
    color: #fff;
    border: 0;
-}
-
-@media (max-width:650px) {
-  .letter button {
-    font-size: 10px;
-  }
 }
 
 /* Footer */
@@ -694,14 +699,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .foo {
   display: flex;
-  justify-content: space-evenly;
-}
-
-@media (max-width:800px) {
-  .foo {
-    flex-direction: column;
-    text-align: center;
-  }
+  justify-content: space-between;
 }
 
 .footer {
@@ -715,13 +713,121 @@ h1, h2, h3, h4, h5, h6 {
    margin: 0px;
 }
 
-@media (max-width:800px){
-.jumbo li {
-  text-align: center;
+@media (max-width:800px) {
+  .home-intro p {
+    font-size: 10px;
+    width: 30%;
+ }
+  .flavor h5 {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .flavor p {
+    font-size: 5px;
+  }
+
+  .flav img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .jumbo{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+  }
+
+  .foo {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-.jumbo{
-  margin: 0, 10px;
+@media (max-width:650px) {
+  .home-intro p {
+    font-size: 10px;
+    padding-left: 20px;
+  }
+
+  .letter button {
+    font-size: 10px;
+  }
 }
 
+@media (max-width:500px) {
+  .home-intro p {
+    font-size: 7px;
+    width: 50%;
+    padding-left: 10px;
+ }
+
+ .home-intro p span {
+    font-size: 20px;
+  }
+
+ .home-intro video {
+   width: 40%;
+ }
+
+  .flavor h5 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .flavor p {
+    font-size: 12px;
+  }
+  .buy h1 {
+    font-size: 30px;
+    padding-left: 2.5em;
+  } 
+}
+
+@media (max-width:400px) {
+  #about h1 {
+    font-size: 30px;
+  }
+
+  #flavours h1 {
+    font-size: 30px;
+  }
+
+  #flavours h2{
+    font-size: 20px;
+    padding-left: 1em;
+    padding-top: 0em;
+ }
+
+  .home-intro p {
+    font-size: 7px;
+    width: 50%;
+    padding-left: 10px;
+ }
+
+ .home-intro p span {
+    font-size: 20px;
+  }
+
+ .home-intro video {
+   width: 40%;
+ }
+
+  .flavor h5 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .flavor p {
+    font-size: 12px;
+  }
+
+  .buy h1 {
+    font-size: 30px;
+    padding-left: 2em;
+  }
+  
+  .buy h3 {
+    font-size: 20px;
+  }
 }
