@@ -494,14 +494,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-intro {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
+   padding-left: 1em;
    height: 50%;
 }
 
 .home-intro p {
    font-size: 12px;
    text-align: justify;
-   width: 30%;
+   width: 40%;
 } 
 
 .home-intro p span {
@@ -512,6 +513,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-intro video {
    max-width: 50%;
+   border: 1px solid #000;
+   margin-right: 0.5em;
 }
 
 /* Flavours */
@@ -537,12 +540,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flav {
-   padding-top: 4em;
+   padding-top: 1.5em;
 }
 
 .flav img {
-  width: 140px;
-   height:140px;
+  /* width: 140px; */
+  height:90px;
 }
 
 
@@ -576,7 +579,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Contact */
 
-#contact {
+#contacts {
    background-image: url(../img/cbg.png);
    background-repeat: no-repeat;
    margin: 0px; 
@@ -588,6 +591,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .buy {
    padding-top: 30em;
+
 }
 
 .buy h1 {
